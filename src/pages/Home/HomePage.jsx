@@ -12,8 +12,13 @@ import {
   EMERSON_SERVICES,
   EMERSON_WEBSITES,
 } from "../../data/emersonData";
+import Intercom from "@intercom/messenger-js-sdk";
 
 export default function HomePage() {
+  Intercom({
+    app_id: "iwce5cdu",
+  });
+
   return (
     <section className="py-10 px-6 bg-[#D8612F] min-h-screen text-white">
       <div className="container mx-auto">
